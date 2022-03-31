@@ -17,6 +17,10 @@ body{
     letter-spacing: 0.03em;;
 }
 
+p, ul, h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
 .list { 
     margin-left: 0; 
     padding-left: 0;  
@@ -41,13 +45,38 @@ body{
 
 }
 
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* ---------------------header--------------------- */
+.header{
+    display: flex;
+    align-items: center;
+    
+}
+
+.header > nav{
+    display: flex;
+    align-items: center;
+}
 
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
+    margin-right: 93px;
 
     color: var(--style-color);
 }
@@ -56,8 +85,16 @@ body{
     color: var(--logo-second);
 }
 
-.logo-footer{
-    color: var(--general-color);
+.site-nav , .auth-nav{
+    display: flex;
+}
+
+.site-nav  li+li{
+    margin-left: 50px;
+}
+
+.auth-nav {
+    margin-left: auto;
 }
 
 .nav-link{
@@ -65,13 +102,19 @@ body{
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;;
-
     color: inherit;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-block;
 }
 
 .nav-link.active{
     color: var(--style-color);
+    border-bottom: 4px solid var(--style-color);
+
 }
+
+
 
 .contact-link{
     color: var(--secondary-text-color);
@@ -79,8 +122,14 @@ body{
 /* ---------------------hero--------------------- */
 
 .hero{
-    background-color: var(--background-color);
-}
+    background-color: var(--background-color); 
+ }
+
+ .hero-content{
+     padding: 200px;
+     text-align: center; 
+ } 
+
 
 .hero-title{
     font-size: 44px;
@@ -90,6 +139,7 @@ body{
     text-transform: uppercase;
     color: var(--general-color);
 
+    margin-bottom: 30px;
 }
 
 .button-hero{
@@ -99,6 +149,9 @@ body{
     letter-spacing: 0.06em;;
     line-height: 1.9;
 
+    padding: 10px 32px;
+    border-radius: 4px;
+
     color: var(--general-color);
     background-color: var(--style-color);
     border: none;
@@ -107,6 +160,7 @@ body{
 }
 
 /* ---------------------advantages--------------------- */
+
 .adv-title{
     visibility: hidden;
     position: absolute;
@@ -117,6 +171,7 @@ body{
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .adv-content{
@@ -126,8 +181,56 @@ body{
     color:var(--secondary-text-color) ;
 }
 
-/* ---------------------team--------------------- */
+.adv-set{
+    display: flex;
+}
 
+.adv-set>li{
+    width: 100%;
+}
+
+.adv-set>li:not(:last-child){
+    margin-right: 30px;
+}
+
+.adv.section{
+    padding-bottom: 0px;
+}
+
+/* ---------------------activity--------------------- */
+
+.activity{
+    text-align: center;
+}
+
+.section-title{
+    margin-bottom: 50px;
+}
+
+.activity-card{
+    display: flex;
+}
+.activity-card>li+li{
+    margin-left: 30px;
+}
+
+/* ---------------------team--------------------- */
+.team{
+text-align: center;
+}
+
+.team ul{ 
+    display: flex;
+}
+
+.team li{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team li+li{
+    margin-left: 30px;
+}
 .team-title,
 .team-content{
     font-size: 14px;
@@ -135,15 +238,30 @@ body{
 }
 .team-title{
     font-weight: 500;
-    
+    margin-bottom: 10px;
+        
 }
 .team-content{
     color:var(--secondary-text-color);
 }
 
+.team-card-content{
+    padding: 30px 0px;
+}
+
 /* ---------------------footer--------------------- */
 .footer{
     background-color: var(--background-color);
+}
+
+.footer .logo{
+    margin-bottom: 20px;
+    display: inline-block
+}
+
+.footer .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-text,
@@ -152,6 +270,14 @@ body{
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+}
+
+.footer li+li{
+    margin-top: 10px;
+}
+
+.logo-footer{
+    color: var(--general-color);
 }
 
 .footer-address{
@@ -198,4 +324,8 @@ color: var(--general-color);
     letter-spacing: 0.03em;
     
     color: var(--secondary-text-color);
+}
+
+.portfolio-card{
+    border: 1px solid #ECECEC;
 }

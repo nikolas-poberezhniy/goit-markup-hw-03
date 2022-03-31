@@ -333,8 +333,12 @@ h6 {
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin: 2px;
 }
+
+.button-portfolio-set li:not(:last-child){
+    margin-right: 8px;
+}
+
 
 .button-portfolio:hover,
 .button-portfolio:focus {

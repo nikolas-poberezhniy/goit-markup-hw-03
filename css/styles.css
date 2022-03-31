@@ -226,6 +226,10 @@ h6 {
     display: flex;
 }
 
+.activity-card img{
+    display: block;
+}
+
 .activity-card>li+li {
     margin-left: 30px;
 }

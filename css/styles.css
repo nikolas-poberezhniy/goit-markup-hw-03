@@ -136,24 +136,23 @@ h6 {
 
 .hero {
     background-color: var(--background-color);
-}
-
-.hero-content {
-    padding: 200px;
+    padding: 200px 0px;
     text-align: center;
 }
 
 
 .hero-title {
+    width: 696px;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
+    
     letter-spacing: 0.06em;
-    ;
     text-transform: uppercase;
     color: var(--general-color);
 
-    margin-bottom: 30px;
+    margin: 0px auto 30px auto;
+
 }
 
 .button-hero {
@@ -226,7 +225,7 @@ h6 {
     display: flex;
 }
 
-.activity-card img{
+.activity-card img {
     display: block;
 }
 
@@ -237,8 +236,9 @@ h6 {
 /* ---------------------team--------------------- */
 
 
-.team-wrapper{
-    background-color: #F5F4FA; /*временно, для вида*/
+.team-wrapper {
+    background-color: #F5F4FA;
+    /*временно, для вида*/
 }
 
 .team {
@@ -281,16 +281,13 @@ h6 {
 /* ---------------------footer--------------------- */
 .footer {
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer .logo {
     margin-bottom: 20px;
     display: inline-block
-}
-
-.footer .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer-text,
@@ -334,12 +331,14 @@ h6 {
     font-weight: 500;
     color: var(--primary-text-color);
 
+    padding: 6px 22px;
+
     border: none;
     cursor: pointer;
     border-radius: 4px;
 }
 
-.button-portfolio-set li:not(:last-child){
+.button-portfolio-set li:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -391,6 +390,6 @@ h6 {
     margin-right: 30px;
 }
 
-.portfolio-card:not(:nth-last-child(-n+3)){
-    margin-bottom:30px;
+.portfolio-card:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
 }
